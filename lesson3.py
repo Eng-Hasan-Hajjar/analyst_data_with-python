@@ -133,7 +133,7 @@ arr = np.array([1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12])
 newarr = arr.reshape(4, 3)
 
 print(newarr)
-
+print(newarr.ndim,"New arr 4 * 3 with reshap()")
 newarr = arr.reshape(3, 4)
 
 print(newarr)
@@ -148,11 +148,11 @@ The outermost dimension will have 2 arrays that contains 3 arrays, each with 2 e
 """
 
 arr = np.array([1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12])
-
+print("---------------------------------- 3 d dime reshap()")
 newarr = arr.reshape(2, 3, 2)
 
 print(newarr)
-
+print("---------------------------------- 3 d dime reshap()")
 ##ex17
 
 ##Try converting 1D array with 8 elements to a 2D array with 3 elements in each dimension (will raise an error):
