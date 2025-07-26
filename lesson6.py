@@ -213,3 +213,97 @@ print(x)
 x = random.choice([3, 5, 7, 9], size=(3, 5))
 
 print(x)
+
+##ex24
+
+"""
+
+Generate a 1-D array containing 100 values, where each value has to be 3, 5, 7 or 9.
+
+The probability for the value to be 3 is set to be 0.1
+
+The probability for the value to be 5 is set to be 0.3
+
+The probability for the value to be 7 is set to be 0.6
+
+The probability for the value to be 9 is set to be 0
+
+"""
+x = random.choice([3, 5, 7, 9], p=[0.1, 0.3, 0.6, 0.0], size=(100))
+
+print(x)
+
+##Ex25
+##Same example as above, but return a 2-D array with 3 rows, each containing 5 values.
+x = random.choice([3, 5, 7, 9], p=[0.1, 0.3, 0.6, 0.0], size=(3, 5))
+
+print(x)
+#ex26
+#Randomly shuffle elements of following array:
+arr = np.array([1, 2, 3, 4, 5])
+
+random.shuffle(arr)
+
+print(arr)
+##ex27
+##Generate a random permutation of elements of following array:
+arr = np.array([1, 2, 3, 4, 5])
+
+print(random.permutation(arr))
+print(arr)
+
+
+#ex28
+
+
+import matplotlib.pyplot as plt
+import seaborn as sns
+"""
+sns.displot([0, 1, 2, 3, 4, 5,6,7])
+
+plt.show()
+
+
+sns.displot([0, 1, 2, 3, 4, 5], kind="kde")
+
+plt.show()
+
+"""
+
+##Normal Distribution
+
+
+x = random.normal(size=(2, 3))
+
+print(x)
+
+"""
+
+sns.displot(random.normal(size=1000), kind="kde")
+
+plt.show()
+
+"""
+
+from numpy import random
+import matplotlib.pyplot as plt
+import seaborn as sns
+x = random.binomial(n=10, p=0.5, size=10)
+
+sns.displot(random.binomial(n=10, p=0.5, size=1000))
+print(x)
+plt.show()
+
+
+from numpy import random
+import matplotlib.pyplot as plt
+import seaborn as sns
+
+data = {
+  "normal": random.normal(loc=50, scale=5, size=1000),
+  "binomial": random.binomial(n=100, p=0.5, size=1000)
+}
+
+sns.displot(data, kind="kde")
+
+plt.show()
