@@ -1,13 +1,13 @@
 Product_Name,Category,Unit_Price,Quantity,Purchase_Date,City
-Phone,Electronics,200,5,01/08/2025,Riyadh
-Laptop,Electronics,800,2,02/08/2025,Jeddah
-Book,Books,20,10,03/08/2025,Dammam
-Printer,Electronics,150,1,04/08/2025,Riyadh
-Notebook,Stationery,5,50,05/08/2025,Mecca
-Pen,Stationery,2,100,06/08/2025,Jeddah
-Phone,Electronics,200,5,01/08/2025,Riyadh
-Laptop,Electronics,800,2,02/08/2025,Jeddah
-Book,Books,20,10,03/08/2025,Dammam
-Printer,Electronics,150,1,04/08/2025,Riyadh
-Notebook,Stationery,5,50,05/08/2025,Mecca
-Pen,Stationery,2,100,06/08/2025,Jeddah
+Phone,Electronics,,5,"Friday, August 1, 2025",Riyadh
+Laptop,Electronics,800,2,"Saturday, August 2, 2025",Jeddah
+Book,Books,20,10,"Sunday, August 3, 2025",Dammam
+Printer,Electronics,150,1,"Monday, August 4, 2025",Riyadh
+Notebook,Stationery,5,50,"Tuesday, August 5, 2025",Mecca
+Pen,Stationery,2,100,"Wednesday, August 6, 2025",Jeddah
+Phone,Electronics,200,5,"Friday, August 1, 2025",Riyadh
+Laptop,Electronics,800,2,"Saturday, August 2, 2025",Jeddah
+Book,Books,20,10,"Sunday, August 3, 2025",Dammam
+Printer,Electronics,150,1,"Monday, August 4, 2025",Riyadh
+Notebook,Stationery,5,50,"Tuesday, August 5, 2025",Mecca
+Pen,Stationery,2,100,"Wednesday, August 6, 2025",Jeddah
