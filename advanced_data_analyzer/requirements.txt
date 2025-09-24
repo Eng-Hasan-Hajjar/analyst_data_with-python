@@ -1,0 +1,11 @@
+tkinter
+pandas
+numpy
+matplotlib
+seaborn
+scipy
+scikit-learn
+pillow
+requests
+
+#pip install -r requirements.txt
