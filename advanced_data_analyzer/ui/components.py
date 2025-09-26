@@ -117,3 +117,31 @@ def show_ml_results(result: str, algorithm: str):
     tk.Label(results_window, text=f"نتائج {algorithm}", font=("Arial", 14, "bold")).pack(pady=10)
     tk.Label(results_window, text=result, font=("Arial", 12)).pack(pady=10)
     tk.Button(results_window, text="حفظ النموذج", command=lambda: save_ml_model(algorithm, result)).pack(pady=10)
+
+
+
+def update_status(msg: str):
+    """تحديث شريط الحالة"""
+    global status_var
+    if status_var is not None:
+        status_var.set(msg)    
+
+
+
+
+def update_data_preview():
+    """تحديث معاينة البيانات في تبويب المعاينة"""
+    global preview_text, data_frame
+    if preview_text is not None and data_frame is not None:
+        preview_text.config(state="normal")
+        preview_text.delete("1.0", tk.END)
+        preview_rows = user_preferences.get("data_preview_rows", 15)
+        preview_content = data_frame.head(preview_rows).to_string() if not data_frame.empty else "لا توجد بيانات"
+        preview_text.insert("1.0", preview_content)
+        preview_text.config(state="disabled")
+    elif preview_text is not None:
+        preview_text.config(state="normal")
+        preview_text.delete("1.0", tk.END)
+        preview_text.insert("1.0", "لا توجد بيانات محملة")
+        preview_text.config(state="disabled")
+
